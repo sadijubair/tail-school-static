@@ -1,0 +1,38 @@
+{
+  "name": "tail-school-static",
+  "version": "1.0.0",
+  "description": "Modern, responsive college website for Govt. Hazi Mohammad Mohsin College built with Tailwind CSS v3",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/src/input.css -o ./assets/css/style.css",
+    "watch": "npx tailwindcss -i ./assets/src/input.css -o ./assets/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadijubair/tail-school-static.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "school-website",
+    "college",
+    "responsive",
+    "education",
+    "static-website"
+  ],
+  "author": "Sadi Jubair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadijubair/tail-school-static/issues"
+  },
+  "homepage": "https://sadijubair.github.io/tail-school-static/",
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
+  }
+}

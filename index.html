@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt. Hazi Mohammad Mohsin College - Quality Education for a Bright Future</title>
+    <link rel="stylesheet" href="./assets/fonts/outfit-local.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body class="antialiased bg-gray-50 text-lg" style="font-family: 'Outfit', sans-serif; font-size: 18px;">
+
+    <!-- ========== HEADER SECTION ========== -->
+    <header class="header-transparent shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-primary text-white text-sm py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex gap-4 md:gap-6">
+                    <span><i class="fas fa-phone mr-1"></i> <span class="hidden md:inline">+880 1234-567890</span></span>
+                    <span><i class="fas fa-envelope mr-1"></i> <span class="hidden md:inline">info@ghmmc.edu.bd</span></span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-gold"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Govt. Hazi Mohammad</h1>
+                        <p class="text-base text-gray-600">Mohsin College</p>
+                    </div>
+                </div>
+                <ul class="hidden lg:flex space-x-6 text-base font-medium items-center">
+                    <li><a href="#home" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            About <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#about" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">About Us</a>
+                            <a href="#history" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">History</a>
+                            <a href="#mission" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Mission & Vision</a>
+                            <a href="#infrastructure" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Infrastructure</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            Academics <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#programs" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Programs</a>
+                            <a href="#departments" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Departments</a>
+                            <a href="#curriculum" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Curriculum</a>
+                            <a href="#calendar" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Academic Calendar</a>
+                        </div>
+                    </li>
+                    <li><a href="#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                    <li><a href="#faculty" class="text-gray-700 hover:text-primary transition">Faculty</a></li>
+                    <li><a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                </ul>
+                <div class="hidden lg:flex items-center gap-3">
+                    <button class="group relative overflow-hidden bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold transition-all duration-300 flex items-center gap-2 h-10">
+                        <i class="fas fa-lock group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg h-10">
+                        Apply Now
+                    </button>
+                </div>
+                <button class="lg:hidden text-primary text-3xl p-2" id="mobileMenuBtn">
+                    <i class="fa-solid fa-list-ul"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-6">
+                <li><a href="#home" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>About</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#about" class="text-gray-600 hover:text-primary transition text-sm block py-1">• About Us</a></li>
+                        <li><a href="#history" class="text-gray-600 hover:text-primary transition text-sm block py-1">• History</a></li>
+                        <li><a href="#mission" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Mission & Vision</a></li>
+                        <li><a href="#infrastructure" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Infrastructure</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>Academics</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#programs" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Programs</a></li>
+                        <li><a href="#departments" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Departments</a></li>
+                        <li><a href="#curriculum" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Curriculum</a></li>
+                        <li><a href="#calendar" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                <li><a href="#faculty" class="text-gray-700 hover:text-primary transition">Faculty</a></li>
+                <li><a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                <li><button class="bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold w-full transition-all duration-300 flex items-center justify-center gap-2 h-10"><i class="fas fa-lock"></i> Login</button></li>
+                <li><button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold w-full hover:bg-red-700 transition-all duration-300 shadow-md h-10">Apply Now</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="relative pt-32 pb-20 min-h-[600px] flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600');">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl text-white">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Govt. Hazi Mohammad Mohsin College
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                    Empowering Students, Enriching Lives, and Building Success Since 1874
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded font-semibold transition text-lg">
+                        <i class="fas fa-user-graduate mr-2"></i>Apply for Admission
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-4 rounded font-semibold transition text-lg">
+                        <i class="fas fa-info-circle mr-2"></i>Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMPORTANT UPDATES & NEWS SECTION ========== -->
+    <section id="news" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Important Updates & News</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="space-y-4">
+                        <!-- News Item 1 -->
+                        <div class="group bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border-l-4 border-primary">
+                            <div class="p-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-20 h-20 bg-gradient-to-br from-primary to-red-700 rounded-lg flex items-center justify-center relative overflow-hidden">
+                                            <div class="text-center text-white">
+                                                <div class="text-2xl font-bold">01</div>
+                                                <div class="text-xs opacity-90">DEC</div>
+                                            </div>
+                                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                                <span class="text-white text-xs font-bold">!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <i class="fas fa-file-pdf text-red-500"></i>
+                                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">New</span>
+                                        </div>
+                                        <a href="#" class="text-gray-700 hover:text-primary font-semibold text-lg mb-2 block group-hover:translate-x-1 transition-transform">
+                                            HSC Admission Circular 2025-26 Session
+                                        </a>
+                                        <p class="text-sm text-gray-600 mb-3">
+                                            Applications are now open for HSC admission. Download the circular and apply before the deadline.
+                                        </p>
+                                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                                            <span><i class="fas fa-clock mr-1"></i> Dec 01, 2025</span>
+                                            <button class="text-primary hover:underline flex items-center gap-1">
+                                                <i class="fas fa-download"></i> Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 2 -->
+                        <div class="group bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border-l-4 border-blue-500">
+                            <div class="p-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-trophy text-white text-3xl"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <i class="fas fa-file-pdf text-red-500"></i>
+                                        </div>
+                                        <a href="#" class="text-gray-700 hover:text-primary font-semibold text-lg mb-2 block group-hover:translate-x-1 transition-transform">
+                                            Notice for Annual Sports Day 2025
+                                        </a>
+                                        <p class="text-sm text-gray-600 mb-3">
+                                            Annual sports competition scheduled for next month. All students are encouraged to participate.
+                                        </p>
+                                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                                            <span><i class="fas fa-clock mr-1"></i> Nov 28, 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 3 -->
+                        <div class="group bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border-l-4 border-green-500">
+                            <div class="p-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-calendar-alt text-white text-3xl"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <i class="fas fa-file-alt text-blue-500"></i>
+                                        </div>
+                                        <a href="#" class="text-gray-700 hover:text-primary font-semibold text-lg mb-2 block group-hover:translate-x-1 transition-transform">
+                                            Academic Calendar for 2025-26 Session
+                                        </a>
+                                        <p class="text-sm text-gray-600 mb-3">
+                                            Complete academic calendar with exam schedules, holidays, and important dates released.
+                                        </p>
+                                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                                            <span><i class="fas fa-clock mr-1"></i> Nov 25, 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Button -->
+                        <div class="mt-6">
+                            <button class="bg-primary text-white px-6 py-2 rounded hover:bg-red-700 transition">
+                                View All Updates <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Profile Card -->
+                <div class="bg-gradient-to-br from-primary to-red-700 text-white rounded-lg p-6 h-fit">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Principal" class="w-full h-64 object-cover rounded-lg mb-4">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Prof. Nasima Begum</h3>
+                    <p class="text-sm mb-4 opacity-90">Principal</p>
+                    <p class="text-sm mb-4 leading-relaxed">
+                        "At GHMMC, we believe in nurturing not just academic excellence but also character development. 
+                        Our mission is to prepare students for life's challenges through quality education and ethical values."
+                    </p>
+                    <button class="bg-white text-primary px-4 py-2 rounded text-sm font-semibold hover:bg-gray-100 transition">
+                        Read Full Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== UNLOCK YOUR FUTURE SECTION ========== -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800" alt="Library" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        Unlock Your Future with Govt. Hazi Mohammad Mohsin College
+                    </h2>
+                    <div class="w-20 h-1 bg-primary mb-6"></div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Founded in 1874, Govt. Hazi Mohammad Mohsin College stands as one of the oldest and most prestigious 
+                        institutions in the region. With over 150 years of academic excellence, we have been shaping minds 
+                        and building futures for generations of students.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-gray-700">Experienced Faculty</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-gray-700">Modern Facilities</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-gray-700">Research Opportunities</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-gray-700">Career Guidance</span>
+                        </div>
+                    </div>
+                    <button class="bg-primary hover:bg-red-700 text-white px-8 py-3 rounded font-semibold transition">
+                        Discover More
+                    </button>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-graduate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Admissions</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Start your journey with us. Apply now for the upcoming academic session.
+                    </p>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Tuition Fees</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Affordable education with flexible payment options for all students.
+                    </p>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Scholarships</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Merit-based and need-based scholarships available for deserving students.
+                    </p>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATISTICS SECTION ========== -->
+    <section class="py-12 bg-gradient-to-r from-primary to-red-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold mb-2">151</div>
+                    <div class="text-sm opacity-90">Years of Excellence</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">4.8</div>
+                    <div class="text-sm opacity-90">Average Rating</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">1000+</div>
+                    <div class="text-sm opacity-90">Students Enrolled</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">99%</div>
+                    <div class="text-sm opacity-90">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LEGAL INFORMATION SECTION ========== -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Legal Information & Policies</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-primary to-red-700 text-white rounded-lg p-8 hover:shadow-xl transition">
+                    <i class="fas fa-gavel text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Act & Statutes (1971)</h3>
+                    <p class="text-sm mb-4 opacity-90">Complete legal framework and governing statutes of the institution.</p>
+                    <a href="#" class="text-white font-semibold hover:underline">Read More →</a>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-red-700 text-white rounded-lg p-8 hover:shadow-xl transition">
+                    <i class="fas fa-file-contract text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Governing Body (1975)</h3>
+                    <p class="text-sm mb-4 opacity-90">Information about the college governing body and management structure.</p>
+                    <a href="#" class="text-white font-semibold hover:underline">Read More →</a>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-red-700 text-white rounded-lg p-8 hover:shadow-xl transition">
+                    <i class="fas fa-university text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">College Office Daily</h3>
+                    <p class="text-sm mb-4 opacity-90">Daily administrative operations, office hours, and contact information.</p>
+                    <a href="#" class="text-white font-semibold hover:underline">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FACULTY SECTION ========== -->
+    <section id="faculty" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Meet Our Esteemed Leaders and Educators</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Our dedicated faculty members bring years of experience and passion for teaching, 
+                    committed to nurturing the next generation of leaders.
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Faculty Card 1 -->
+                <div class="group">
+                    <div class="bg-gray-50 rounded-xl p-4 sm:p-6 hover:bg-white hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-full max-w-xs aspect-square">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Prof. Ahmed Khan" class="w-full h-full object-cover border-4 border-white shadow-lg rounded-lg">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-bold text-base sm:text-lg text-gray-800 mb-1">Prof. Ahmed Khan</h3>
+                            <p class="text-primary text-xs sm:text-sm font-semibold">Vice Principal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Card 2 -->
+                <div class="group">
+                    <div class="bg-gray-50 rounded-xl p-4 sm:p-6 hover:bg-white hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-full max-w-xs aspect-square">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400" alt="Dr. Fatima Rahman" class="w-full h-full object-cover border-4 border-white shadow-lg rounded-lg">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-bold text-base sm:text-lg text-gray-800 mb-1">Dr. Fatima Rahman</h3>
+                            <p class="text-primary text-xs sm:text-sm font-semibold">Head, Science Dept.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Card 3 -->
+                <div class="group">
+                    <div class="bg-gray-50 rounded-xl p-4 sm:p-6 hover:bg-white hover:shadow-xl transition-all duration-300 border-2 border-gray-100 hover:border-primary">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-full max-w-xs aspect-square">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Prof. Karim Hassan" class="w-full h-full object-cover border-4 border-white shadow-lg rounded-lg">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-bold text-base sm:text-lg text-gray-800 mb-1">Prof. Karim Hassan</h3>
+                            <p class="text-primary text-xs sm:text-sm font-semibold">Head, Arts Dept.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Card -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-primary to-red-700 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col items-center justify-center text-white cursor-pointer">
+                        <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-users text-4xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">View All Faculty</h3>
+                        <p class="text-sm text-white/90 text-center mb-4">Complete Faculty Directory</p>
+                        <div class="w-12 h-1 bg-white/50 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAMPUS CULTURE GALLERY SECTION ========== -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">A Glimpse into Our Campus Culture</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="overflow-hidden">
+                <div id="cultureCarousel" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="Campus Event" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600" alt="Sports Day" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600" alt="Cultural Program" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item hidden">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600" alt="Classroom" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item hidden">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600" alt="Library" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition culture-item hidden">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600" alt="Graduation" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button class="bg-primary hover:bg-red-700 text-white px-8 py-3 rounded font-semibold transition">
+                    View Full Gallery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MESSAGE FROM LEADERS SECTION ========== -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Inspiring Words from Our Leaders</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Hear from the visionaries who guide our institution towards excellence and innovation
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Leader Card 1 - Principal -->
+                <div class="group bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-primary">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg ring-4 ring-gray-100 group-hover:ring-primary/30 transition-all duration-300">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Prof. Nasima Begum" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute top-0 right-1/2 transform translate-x-16 -translate-y-2">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fas fa-quote-left text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Prof. Nasima Begum</h3>
+                        <p class="text-primary text-sm font-semibold mb-3">Principal</p>
+                        <div class="flex items-center justify-center gap-1 mb-4">
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center italic mb-4">
+                        "Education shapes character and critical thinking. We're committed to preparing students 
+                        for tomorrow's challenges through holistic learning."
+                    </p>
+                    <div class="flex justify-center">
+                        <button class="text-primary hover:text-red-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            <span>Read Full Message</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Leader Card 2 - Vice Principal -->
+                <div class="group bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-primary">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg ring-4 ring-gray-100 group-hover:ring-primary/30 transition-all duration-300">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Prof. Ahmed Khan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute top-0 right-1/2 transform translate-x-16 -translate-y-2">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fas fa-quote-left text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Prof. Ahmed Khan</h3>
+                        <p class="text-primary text-sm font-semibold mb-3">Vice Principal</p>
+                        <div class="flex items-center justify-center gap-1 mb-4">
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center italic mb-4">
+                        "Excellence in education comes from dedication, innovation, and a commitment to student success. 
+                        Together, we build futures."
+                    </p>
+                    <div class="flex justify-center">
+                        <button class="text-primary hover:text-red-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            <span>Read Full Message</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Leader Card 3 - Academic Head -->
+                <div class="group bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 hover:border-primary md:col-span-2 lg:col-span-1">
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg ring-4 ring-gray-100 group-hover:ring-primary/30 transition-all duration-300">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400" alt="Dr. Fatima Rahman" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute top-0 right-1/2 transform translate-x-16 -translate-y-2">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fas fa-quote-left text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Fatima Rahman</h3>
+                        <p class="text-primary text-sm font-semibold mb-3">Head of Academics</p>
+                        <div class="flex items-center justify-center gap-1 mb-4">
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                            <i class="fas fa-star text-gold text-xs"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center italic mb-4">
+                        "Academic rigor combined with compassionate mentoring creates well-rounded individuals ready 
+                        to lead and inspire change."
+                    </p>
+                    <div class="flex justify-center">
+                        <button class="text-primary hover:text-red-700 font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
+                            <span>Read Full Message</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                    <div class="w-20 h-1 bg-primary mb-6"></div>
+                    <div class="space-y-4">
+                        <div class="faq-item bg-white rounded-lg shadow-md">
+                            <button class="faq-question w-full text-left p-4 font-semibold text-gray-800 flex justify-between items-center hover:text-primary transition">
+                                <span>What is the admission process for Govt. Hazi Mohammad Mohsin College?</span>
+                                <i class="fas fa-chevron-down text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                                The admission process begins with online application submission. Students must meet the eligibility criteria and pass the entrance examination. Detailed guidelines are available on our admissions page.
+                            </div>
+                        </div>
+                        <div class="faq-item bg-white rounded-lg shadow-md">
+                            <button class="faq-question w-full text-left p-4 font-semibold text-gray-800 flex justify-between items-center hover:text-primary transition">
+                                <span>Are there any scholarships available?</span>
+                                <i class="fas fa-chevron-down text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                                Yes, we offer various merit-based and need-based scholarships for deserving students. These include government scholarships and institutional financial aid programs.
+                            </div>
+                        </div>
+                        <div class="faq-item bg-white rounded-lg shadow-md">
+                            <button class="faq-question w-full text-left p-4 font-semibold text-gray-800 flex justify-between items-center hover:text-primary transition">
+                                <span>How can I contact the admission office?</span>
+                                <i class="fas fa-chevron-down text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                                You can reach our admission office via phone at +880 1234-567890 or email at admission@ghmmc.edu.bd during office hours (9 AM - 4 PM, Sunday to Thursday).
+                            </div>
+                        </div>
+                        <div class="faq-item bg-white rounded-lg shadow-md">
+                            <button class="faq-question w-full text-left p-4 font-semibold text-gray-800 flex justify-between items-center hover:text-primary transition">
+                                <span>What programs does the college offer?</span>
+                                <i class="fas fa-chevron-down text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                                We offer HSC programs in Science, Humanities, and Business Studies, along with various honors and masters programs affiliated with National University.
+                            </div>
+                        </div>
+                        <div class="faq-item bg-white rounded-lg shadow-md">
+                            <button class="faq-question w-full text-left p-4 font-semibold text-gray-800 flex justify-between items-center hover:text-primary transition">
+                                <span>I need help with college admission for my son/daughter. Can I get support and advice?</span>
+                                <i class="fas fa-chevron-down text-gray-400"></i>
+                            </button>
+                            <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                                Absolutely! Our counseling team is here to guide you through the entire admission process. Schedule an appointment with our admission counselors for personalized assistance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600" alt="Student" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT & JOIN US SECTION ========== -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Join Us & Be a Part of the Govt. Hazi Mohammad Mohsin College Family</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Phone</h3>
+                    <p class="text-gray-600">+880 1234-567890</p>
+                    <p class="text-gray-600">+880 9876-543210</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Email</h3>
+                    <p class="text-gray-600">info@ghmmc.edu.bd</p>
+                    <p class="text-gray-600">admission@ghmmc.edu.bd</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Visit</h3>
+                    <p class="text-gray-600">Mohsin Road, Chittagong</p>
+                    <p class="text-gray-600">Bangladesh - 4000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAP SECTION ========== -->
+    <section class="h-96 bg-gray-300">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.0616523090887!2d91.83088931495453!3d22.358851885271205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8a64f31cc6f%3A0x3c8e7267d968d5a3!2sChittagong%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="bg-gray-900 text-gray-200">
+        <!-- Main Footer -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- About Section -->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">GHMMC</h3>
+                                <p class="text-xs text-gray-500">Est. 1874</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Empowering students with quality education and character development for over 150 years.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-facebook-f text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-twitter text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-youtube text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-linkedin-in text-base text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="#home" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Home</span>
+                            </a></li>
+                            <li><a href="#about" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">About Us</span>
+                            </a></li>
+                            <li><a href="#programs" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Programs</span>
+                            </a></li>
+                            <li><a href="#admission" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Admission</span>
+                            </a></li>
+                            <li><a href="#faculty" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Faculty</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Resources
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Library</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Student Portal</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Calendar</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Downloads</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Alumni Network</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Newsletter
+                        </h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Subscribe to get the latest news and updates from GHMMC.
+                        </p>
+                        <form class="space-y-3">
+                            <div class="relative">
+                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white px-4 py-3 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>Subscribe Now</span>
+                                <i class="fas fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-950 border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>&copy; 2025 Govt. Hazi Mohammad Mohsin College. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-primary transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
