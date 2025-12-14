@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Teachers - Govt. Hazi Mohammad Mohsin College</title>
+    <link rel="stylesheet" href="./assets/fonts/outfit-local.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/all.min.css">
+</head>
+<body class="antialiased bg-gray-50 text-lg" style="font-family: 'Outfit', sans-serif; font-size: 18px;">
+
+    <!-- ========== HEADER SECTION ========== -->
+    <header class="header-transparent shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-primary text-white text-sm py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex gap-4 md:gap-6">
+                    <span><i class="fas fa-phone mr-1"></i> <span class="hidden md:inline">+880 1234-567890</span></span>
+                    <span><i class="fas fa-envelope mr-1"></i> <span class="hidden md:inline">info@ghmmc.edu.bd</span></span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-gold"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Govt. Hazi Mohammad</h1>
+                        <p class="text-base text-gray-600">Mohsin College</p>
+                    </div>
+                </div>
+                <ul class="hidden lg:flex space-x-6 text-base font-medium items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            About <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="index.html#about" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">About Us</a>
+                            <a href="#history" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">History</a>
+                            <a href="#mission" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Mission & Vision</a>
+                            <a href="#infrastructure" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Infrastructure</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            Academics <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#programs" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Programs</a>
+                            <a href="#departments" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Departments</a>
+                            <a href="#curriculum" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Curriculum</a>
+                            <a href="#calendar" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Academic Calendar</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                    <li><a href="teachers.html" class="text-primary font-semibold transition">Teachers</a></li>
+                    <li><a href="index.html#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                </ul>
+                <div class="hidden lg:flex items-center gap-3">
+                    <button class="group relative overflow-hidden bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold transition-all duration-300 flex items-center gap-2 h-10">
+                        <i class="fas fa-lock group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg h-10">
+                        Apply Now
+                    </button>
+                </div>
+                <button class="lg:hidden text-primary text-3xl p-2" id="mobileMenuBtn">
+                    <i class="fa-solid fa-list-ul"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>About</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="index.html#about" class="text-gray-600 hover:text-primary transition text-sm block py-1">• About Us</a></li>
+                        <li><a href="#history" class="text-gray-600 hover:text-primary transition text-sm block py-1">• History</a></li>
+                        <li><a href="#mission" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Mission & Vision</a></li>
+                        <li><a href="#infrastructure" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Infrastructure</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>Academics</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#programs" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Programs</a></li>
+                        <li><a href="#departments" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Departments</a></li>
+                        <li><a href="#curriculum" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Curriculum</a></li>
+                        <li><a href="#calendar" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                <li><a href="teachers.html" class="text-primary font-semibold transition">Teachers</a></li>
+                <li><a href="index.html#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                <li><button class="bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold w-full transition-all duration-300 flex items-center justify-center gap-2 h-10"><i class="fas fa-lock"></i> Login</button></li>
+                <li><button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold w-full hover:bg-red-700 transition-all duration-300 shadow-md h-10">Apply Now</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== PAGE HEADER SECTION ========== -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-primary to-red-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Teachers</h1>
+                <p class="text-lg mb-6">
+                    Meet our dedicated faculty members committed to excellence in education
+                </p>
+                <div class="flex items-center justify-center gap-3 text-sm">
+                    <a href="index.html" class="hover:text-gold transition">
+                        <i class="fas fa-home mr-1"></i>Home
+                    </a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span>Teachers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION ========== -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6 -mt-32 relative z-20">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 border-t-4 border-blue-500">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-1">120+</h3>
+                    <p class="text-gray-600 text-sm">Total Teachers</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 border-t-4 border-green-500">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-1">45+</h3>
+                    <p class="text-gray-600 text-sm">PhD Holders</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 border-t-4 border-purple-500">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-1">15+</h3>
+                    <p class="text-gray-600 text-sm">Departments</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 border-t-4 border-yellow-500">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-1">25+</h3>
+                    <p class="text-gray-600 text-sm">Years Average Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FILTER SECTION ========== -->
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                <div class="flex flex-wrap gap-3">
+                    <button class="filter-btn active px-6 py-2 rounded-lg bg-primary text-white font-semibold text-sm transition-all duration-300" data-filter="all">
+                        All Teachers
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 font-semibold text-sm transition-all duration-300" data-filter="science">
+                        Science
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 font-semibold text-sm transition-all duration-300" data-filter="arts">
+                        Arts
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-lg bg-gray-100 text-gray-700 hover:bg-gray-200 font-semibold text-sm transition-all duration-300" data-filter="commerce">
+                        Commerce
+                    </button>
+                </div>
+                <div class="relative w-full md:w-80">
+                    <input type="text" id="searchTeacher" placeholder="Search teachers..." class="w-full px-4 py-2 pl-10 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-all">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEACHERS GRID SECTION ========== -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="teachersGrid">
+                
+                <!-- Teacher Card 1 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="science">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Dr. Ahmed Rahman</h3>
+                            <p class="text-gray-200 text-sm">Professor of Physics</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-semibold">Science</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">PhD</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">PhD in Theoretical Physics from Dhaka University. 20+ years of teaching experience.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:ahmed@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=1" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 2 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="arts">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Prof. Fatima Khatun</h3>
+                            <p class="text-gray-200 text-sm">Professor of English Literature</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold">Arts</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">PhD</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">PhD in English Literature. Published author with 15+ years teaching experience.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:fatima@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=2" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 3 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="commerce">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Mr. Kamal Hossain</h3>
+                            <p class="text-gray-200 text-sm">Associate Professor of Accounting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">Commerce</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-xs font-semibold">MBA</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">MBA in Finance. Chartered Accountant with 18 years of teaching experience.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:kamal@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=3" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 4 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="science">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Dr. Sadia Islam</h3>
+                            <p class="text-gray-200 text-sm">Professor of Chemistry</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-semibold">Science</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">PhD</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">PhD in Organic Chemistry. Research publications in international journals.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:sadia@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=4" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 5 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="arts">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-yellow-500 to-yellow-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Mr. Rafiq Ahmed</h3>
+                            <p class="text-gray-200 text-sm">Assistant Professor of History</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold">Arts</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-xs font-semibold">MA</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">MA in History. Specializes in South Asian history with 12 years experience.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:rafiq@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=5" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 6 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="science">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Mrs. Nasrin Akter</h3>
+                            <p class="text-gray-200 text-sm">Associate Professor of Mathematics</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-semibold">Science</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">PhD</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">PhD in Applied Mathematics. Expert in Calculus and Linear Algebra.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:nasrin@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=6" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 7 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="commerce">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Prof. Abdul Majid</h3>
+                            <p class="text-gray-200 text-sm">Professor of Economics</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">Commerce</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-semibold">PhD</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">PhD in Development Economics. Former World Bank consultant.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:majid@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=7" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teacher Card 8 -->
+                <div class="teacher-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-department="arts">
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center">
+                            <i class="fas fa-user-circle text-white text-8xl opacity-50"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                            <h3 class="text-white font-bold text-lg">Ms. Rima Sultana</h3>
+                            <p class="text-gray-200 text-sm">Lecturer of Bangla Literature</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold">Arts</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-xs font-semibold">MA</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">MA in Bangla. Award-winning poet and cultural activist with 8 years experience.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="mailto:rima@ghmmc.edu.bd" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-envelope text-xs"></i>
+                                </a>
+                                <a href="#" class="w-8 h-8 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-all duration-300">
+                                    <i class="fas fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                            <a href="teacher-details.html?id=8" class="text-primary hover:text-red-700 font-semibold text-sm transition-colors flex items-center gap-1">
+                                View Profile <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden text-center py-16">
+                <i class="fas fa-user-slash text-gray-300 text-6xl mb-4"></i>
+                <p class="text-gray-500 text-xl">No teachers found matching your search</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="bg-gray-900 text-gray-200">
+        <!-- Main Footer -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- About Section -->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">GHMMC</h3>
+                                <p class="text-xs text-gray-500">Est. 1874</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Empowering students with quality education and character development for over 150 years.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-facebook-f text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-twitter text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-youtube text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-linkedin-in text-base text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Home</span>
+                            </a></li>
+                            <li><a href="index.html#about" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">About Us</span>
+                            </a></li>
+                            <li><a href="#programs" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Programs</span>
+                            </a></li>
+                            <li><a href="index.html#admission" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Admission</span>
+                            </a></li>
+                            <li><a href="teachers.html" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Teachers</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Resources
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Library</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Student Portal</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Calendar</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Downloads</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Alumni Network</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Newsletter
+                        </h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Subscribe to get the latest news and updates from GHMMC.
+                        </p>
+                        <form class="space-y-3">
+                            <div class="relative">
+                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white px-4 py-3 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>Subscribe Now</span>
+                                <i class="fas fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-950 border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>&copy; 2025 Govt. Hazi Mohammad Mohsin College. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-primary transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const teacherCards = document.querySelectorAll('.teacher-card');
+        const searchInput = document.getElementById('searchTeacher');
+        const noResults = document.getElementById('noResults');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-white');
+                    b.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                btn.classList.add('active', 'bg-primary', 'text-white');
+                btn.classList.remove('bg-gray-100', 'text-gray-700');
+
+                // Filter cards
+                const filter = btn.dataset.filter;
+                filterCards(filter, searchInput.value);
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+            filterCards(activeFilter, e.target.value);
+        });
+
+        function filterCards(department, searchTerm) {
+            let visibleCount = 0;
+            
+            teacherCards.forEach(card => {
+                const cardDepartment = card.dataset.department;
+                const cardText = card.textContent.toLowerCase();
+                const matchesDepartment = department === 'all' || cardDepartment === department;
+                const matchesSearch = cardText.includes(searchTerm.toLowerCase());
+
+                if (matchesDepartment && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide no results message
+            noResults.classList.toggle('hidden', visibleCount > 0);
+        }
+    </script>
+
+</body>
+</html>

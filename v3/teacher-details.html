@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Teachers - Govt. Hazi Mohammad Mohsin College</title>
+    <link rel="stylesheet" href="./assets/fonts/outfit-local.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/all.min.css">
+</head>
+<body class="antialiased bg-gray-50 text-lg overflow-x-hidden" style="font-family: 'Outfit', sans-serif; font-size: 18px;">
+
+    <!-- ========== HEADER SECTION ========== -->
+    <header class="header-transparent shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-primary text-white text-sm py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex gap-4 md:gap-6">
+                    <span><i class="fas fa-phone mr-1"></i> <span class="hidden md:inline">+880 1234-567890</span></span>
+                    <span><i class="fas fa-envelope mr-1"></i> <span class="hidden md:inline">info@ghmmc.edu.bd</span></span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-gold"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Govt. Hazi Mohammad</h1>
+                        <p class="text-base text-gray-600">Mohsin College</p>
+                    </div>
+                </div>
+                <ul class="hidden lg:flex space-x-6 text-base font-medium items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            About <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="index.html#about" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">About Us</a>
+                            <a href="#history" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">History</a>
+                            <a href="#mission" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Mission & Vision</a>
+                            <a href="#infrastructure" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Infrastructure</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            Academics <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#programs" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Programs</a>
+                            <a href="#departments" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Departments</a>
+                            <a href="#curriculum" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Curriculum</a>
+                            <a href="#calendar" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Academic Calendar</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                    <li><a href="teachers.html" class="text-primary font-semibold transition">Teachers</a></li>
+                    <li><a href="index.html#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                </ul>
+                <div class="hidden lg:flex items-center gap-3">
+                    <button class="group relative overflow-hidden bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold transition-all duration-300 flex items-center gap-2 h-10">
+                        <i class="fas fa-lock group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg h-10">
+                        Apply Now
+                    </button>
+                </div>
+                <button class="lg:hidden text-primary text-3xl p-2" id="mobileMenuBtn">
+                    <i class="fa-solid fa-list-ul"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>About</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="index.html#about" class="text-gray-600 hover:text-primary transition text-sm block py-1">• About Us</a></li>
+                        <li><a href="#history" class="text-gray-600 hover:text-primary transition text-sm block py-1">• History</a></li>
+                        <li><a href="#mission" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Mission & Vision</a></li>
+                        <li><a href="#infrastructure" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Infrastructure</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>Academics</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#programs" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Programs</a></li>
+                        <li><a href="#departments" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Departments</a></li>
+                        <li><a href="#curriculum" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Curriculum</a></li>
+                        <li><a href="#calendar" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                <li><a href="teachers.html" class="text-primary font-semibold transition">Teachers</a></li>
+                <li><a href="index.html#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                <li><button class="bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold w-full transition-all duration-300 flex items-center justify-center gap-2 h-10"><i class="fas fa-lock"></i> Login</button></li>
+                <li><button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold w-full hover:bg-red-700 transition-all duration-300 shadow-md h-10">Apply Now</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="relative pt-32 md:pt-40 pb-12 md:pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-20 overflow-hidden">
+            <div class="absolute top-20 -left-20 md:left-10 w-48 h-48 md:w-72 md:h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div class="absolute top-40 -right-20 md:right-10 w-48 h-48 md:w-72 md:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-48 h-48 md:w-72 md:h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 4s;"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 md:mb-16">
+                <!-- Breadcrumb -->
+                <nav class="flex items-center gap-2 md:gap-3 text-gray-400 text-xs md:text-sm flex-wrap">
+                    <a href="index.html" class="hover:text-white transition flex items-center gap-1 md:gap-2">
+                        <i class="fas fa-home text-sm"></i>
+                        <span>Home</span>
+                    </a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="teachers.html" class="hover:text-white transition">Teachers</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Dr. Ahmed Rahman</span>
+                </nav>
+                
+                <!-- Back Button -->
+                <a href="teachers.html" class="px-4 md:px-6 py-2 md:py-3 bg-white/10 backdrop-blur-lg text-white rounded-full hover:bg-white/20 transition-all duration-300 flex items-center gap-2 border border-white/20 text-sm md:text-base">
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="md:inline">Back to Teachers</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <div class="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
+                        <!-- Animated Rings -->
+                        <div class="absolute inset-0 border-2 md:border-4 border-primary/30 rounded-full animate-ping" style="animation-duration: 3s;"></div>
+                        <div class="absolute inset-2 md:inset-4 border-2 md:border-4 border-blue-500/20 rounded-full animate-ping" style="animation-duration: 3s; animation-delay: 1s;"></div>
+                        
+                        <!-- Profile Circle -->
+                        <div class="w-full h-full bg-gradient-to-br from-primary via-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-user-graduate text-white text-6xl md:text-7xl lg:text-9xl"></i>
+                        </div>
+                        
+                        <!-- Verified Badge -->
+                        <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-xl border-2 md:border-4 border-gray-900">
+                            <i class="fas fa-check-double text-white text-sm md:text-xl lg:text-2xl"></i>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -top-2 -right-2 md:-top-4 md:-right-4 bg-yellow-400 text-gray-900 px-3 py-1 md:px-6 md:py-3 rounded-full font-black text-xs md:text-sm shadow-xl animate-bounce">
+                            ⭐ Top Rated
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="flex-1 text-center lg:text-left max-w-full">
+                    <div class="mb-3 md:mb-4">
+                        <span class="inline-block px-4 md:px-6 py-1.5 md:py-2 bg-primary/20 text-primary backdrop-blur-lg rounded-full text-xs md:text-sm font-bold border border-primary/30">
+                            Professor of Physics
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white mb-3 md:mb-4 break-words">
+                        Dr. Ahmed 
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-500 to-purple-500">Rahman</span>
+                    </h1>
+                    
+                    <p class="text-base md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto lg:mx-0">
+                        Theoretical Physics Expert • Research Scholar • 20+ Years Experience
+                    </p>
+
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8 justify-center lg:justify-start">
+                        <span class="px-3 md:px-5 py-1.5 md:py-2 bg-white/10 backdrop-blur-lg text-white rounded-lg text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2 border border-white/20">
+                            <i class="fas fa-building text-xs md:text-sm"></i>
+                            <span class="whitespace-nowrap">Science Department</span>
+                        </span>
+                        <span class="px-3 md:px-5 py-1.5 md:py-2 bg-white/10 backdrop-blur-lg text-white rounded-lg text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2 border border-white/20">
+                            <i class="fas fa-graduation-cap text-xs md:text-sm"></i>
+                            <span class="whitespace-nowrap">PhD, M.Sc, B.Sc</span>
+                        </span>
+                        <span class="px-3 md:px-5 py-1.5 md:py-2 bg-white/10 backdrop-blur-lg text-white rounded-lg text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2 border border-white/20">
+                            <i class="fas fa-clock text-xs md:text-sm"></i>
+                            <span class="whitespace-nowrap">20+ Years</span>
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-2 md:gap-4 mb-8 md:mb-12 justify-center lg:justify-start">
+                        <a href="mailto:ahmed@ghmmc.edu.bd" class="px-4 md:px-8 py-2.5 md:py-4 bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white rounded-xl md:rounded-2xl text-sm md:text-base font-bold shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-2 md:gap-3">
+                            <i class="fas fa-envelope text-base md:text-xl"></i>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="tel:+8801234567890" class="px-4 md:px-8 py-2.5 md:py-4 bg-white/10 backdrop-blur-lg text-white rounded-xl md:rounded-2xl text-sm md:text-base font-bold border-2 border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center gap-2 md:gap-3">
+                            <i class="fas fa-phone text-base md:text-xl"></i>
+                            <span>Call Now</span>
+                        </a>
+                        <a href="#" class="px-4 md:px-8 py-2.5 md:py-4 bg-white/10 backdrop-blur-lg text-white rounded-xl md:rounded-2xl text-sm md:text-base font-bold border-2 border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center gap-2 md:gap-3">
+                            <i class="fab fa-linkedin text-base md:text-xl"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl lg:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 mb-1 md:mb-2">12</div>
+                            <div class="text-gray-400 text-xs md:text-sm font-semibold">Courses</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl lg:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600 mb-1 md:mb-2">45+</div>
+                            <div class="text-gray-400 text-xs md:text-sm font-semibold">Publications</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl lg:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600 mb-1 md:mb-2">500+</div>
+                            <div class="text-gray-400 text-xs md:text-sm font-semibold">Students</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-3xl md:text-4xl lg:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 mb-1 md:mb-2">15</div>
+                            <div class="text-gray-400 text-xs md:text-sm font-semibold">Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <section class="py-10 md:py-16 lg:py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Main Content - 2 Columns -->
+                <div class="lg:col-span-2 space-y-6 md:space-y-8">
+                    
+                    <!-- Primary Information -->
+                    <div class="bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-10">
+                        <div class="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                            <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary to-red-600 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-tie text-white text-lg md:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900">Primary Information</h2>
+                                <p class="text-sm md:text-base text-gray-500">Personal Details</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Full Name (English)</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Dr. Ahmed Rahman</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Full Name (বাংলা)</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">ড. আহমেদ রহমান</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Father's Name</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Mohammad Abdul Rahman</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Mother's Name</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Fatima Begum</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Spouse Name</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Nusrat Ahmed</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Marital Status</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">
+                                    <span class="px-3 md:px-4 py-1 bg-green-100 text-green-700 rounded-full text-xs md:text-sm">Married</span>
+                                </p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Religion</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Islam</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Gender</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Male</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Date of Birth</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">January 15, 1978</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">NID Number</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">1234567890123</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Birth Certificate Number</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">19780115123456789</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-10">
+                        <div class="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                            <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-address-card text-white text-lg md:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900">Contact Information</h2>
+                                <p class="text-sm md:text-base text-gray-500">How to Reach</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4 md:space-y-6">
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Present Address</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">House #45, Road #12, Dhanmondi, Dhaka-1209, Bangladesh</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Permanent Address</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Village: Karimpur, Post Office: Sherpur, Upazila: Nalitabari, District: Sherpur, Bangladesh</p>
+                            </div>
+                            <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+                                <div class="space-y-1 md:space-y-2">
+                                    <p class="text-xs md:text-sm font-semibold text-gray-500">Mobile Number</p>
+                                    <p class="text-base md:text-lg font-bold text-gray-900">
+                                        <a href="tel:+8801712345678" class="text-primary hover:underline flex items-center gap-2">
+                                            <i class="fas fa-phone text-xs md:text-sm"></i>
+                                            <span class="text-sm md:text-base lg:text-lg">+880 1712-345678</span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="space-y-1 md:space-y-2">
+                                    <p class="text-xs md:text-sm font-semibold text-gray-500">Mobile Number (Alternative)</p>
+                                    <p class="text-base md:text-lg font-bold text-gray-900">
+                                        <a href="tel:+8801812345678" class="text-primary hover:underline flex items-center gap-2">
+                                            <i class="fas fa-phone text-xs md:text-sm"></i>
+                                            <span class="text-sm md:text-base lg:text-lg">+880 1812-345678</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Email Address</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">
+                                    <a href="mailto:ahmed.rahman@ghmmc.edu.bd" class="text-primary hover:underline flex items-center gap-2">
+                                        <i class="fas fa-envelope text-xs md:text-sm"></i>
+                                        <span class="text-sm md:text-base lg:text-lg break-all">ahmed.rahman@ghmmc.edu.bd</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-10">
+                        <div class="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                            <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-graduation-cap text-white text-lg md:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900">Academic Information</h2>
+                                <p class="text-sm md:text-base text-gray-500">Educational Background</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+                            <table class="w-full min-w-[640px]">
+                                <thead>
+                                    <tr class="bg-gray-100">
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 rounded-tl-xl whitespace-nowrap">#</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Exam/Degree</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Board/University</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Group/Subject</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Session</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Passing Year</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 whitespace-nowrap">Duration</th>
+                                        <th class="px-2 md:px-4 py-3 text-left text-xs md:text-sm font-bold text-gray-700 rounded-tr-xl whitespace-nowrap">Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-semibold text-gray-600">1</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-bold text-gray-900 whitespace-nowrap">PhD</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">University of Dhaka</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">Theoretical Physics</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">2003-2007</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">2007</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">4 Years</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4">
+                                            <span class="px-2 md:px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold whitespace-nowrap">Excellent</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-semibold text-gray-600">2</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-bold text-gray-900 whitespace-nowrap">Master</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">University of Dhaka</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">Physics</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">2001-2003</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">2003</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">2 Years</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4">
+                                            <span class="px-2 md:px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold whitespace-nowrap">CGPA 3.85</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-semibold text-gray-600">3</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-bold text-gray-900 whitespace-nowrap">B.Sc (Hons)</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">University of Dhaka</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">Physics</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">1997-2001</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">2001</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">4 Years</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4">
+                                            <span class="px-2 md:px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold whitespace-nowrap">CGPA 3.78</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-semibold text-gray-600">4</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-bold text-gray-900 whitespace-nowrap">HSC</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">Dhaka Board</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">Science</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">1995-1997</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">1997</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">2 Years</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4">
+                                            <span class="px-2 md:px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold whitespace-nowrap">GPA 5.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-semibold text-gray-600">5</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm font-bold text-gray-900 whitespace-nowrap">SSC</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">Dhaka Board</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">Science</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">1993-1995</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700">1995</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4 text-xs md:text-sm text-gray-700 whitespace-nowrap">2 Years</td>
+                                        <td class="px-2 md:px-4 py-3 md:py-4">
+                                            <span class="px-2 md:px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold whitespace-nowrap">GPA 5.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Employment Information -->
+                    <div class="bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-10">
+                        <div class="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                            <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-briefcase text-white text-lg md:text-2xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900">Employment Information</h2>
+                                <p class="text-sm md:text-base text-gray-500">Professional Details</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Designation</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Professor</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">NTRCA Registration Number</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">NTRCA-2004-12345</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Joining Date</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">January 5, 2005</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">MPO Date</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">March 15, 2005</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">PDS ID</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">PDS-DH-2005-0123</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Index Number</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">305</p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Employment Type</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">
+                                    <span class="px-3 md:px-4 py-1 md:py-2 bg-green-100 text-green-700 rounded-full text-xs md:text-sm font-bold">Permanent</span>
+                                </p>
+                            </div>
+                            <div class="space-y-1 md:space-y-2">
+                                <p class="text-xs md:text-sm font-semibold text-gray-500">Department</p>
+                                <p class="text-base md:text-lg font-bold text-gray-900">Physics Department</p>
+                            </div>
+                        </div>
+
+                        <!-- Employment Timeline -->
+                        <div class="mt-6 md:mt-8 p-4 md:p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl md:rounded-2xl border-2 border-blue-100">
+                            <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                                <i class="fas fa-clock text-lg md:text-2xl text-primary"></i>
+                                <h3 class="text-base md:text-xl font-black text-gray-900">Service Duration</h3>
+                            </div>
+                            <div class="grid grid-cols-3 gap-3 md:gap-4">
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-black text-primary">20+</p>
+                                    <p class="text-xs md:text-sm text-gray-600 font-semibold">Years</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-black text-blue-600">240+</p>
+                                    <p class="text-xs md:text-sm text-gray-600 font-semibold">Months</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-black text-purple-600">7300+</p>
+                                    <p class="text-xs md:text-sm text-gray-600 font-semibold">Days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar - 1 Column -->
+                <div class="lg:col-span-1 space-y-6">
+                    
+                    <!-- Quick Contact Card -->
+                    <div class="bg-gradient-to-br from-primary to-red-600 rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 text-white lg:sticky lg:top-24">
+                        <div class="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                            <i class="fas fa-address-card text-2xl md:text-3xl"></i>
+                            <h3 class="text-xl md:text-2xl font-black">Quick Contact</h3>
+                        </div>
+                        <div class="space-y-3 md:space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-envelope text-lg md:text-xl opacity-80 mt-1"></i>
+                                <div>
+                                    <p class="text-xs md:text-sm opacity-80">Email</p>
+                                    <a href="mailto:ahmed@ghmmc.edu.bd" class="text-sm md:text-base font-bold hover:underline break-all">ahmed@ghmmc.edu.bd</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-phone text-lg md:text-xl opacity-80 mt-1"></i>
+                                <div>
+                                    <p class="text-xs md:text-sm opacity-80 mb-1">Phone</p>
+                                    <a href="tel:+8801712345678" class="text-sm md:text-base font-bold hover:underline">+880 1712-345678</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-lg md:text-xl opacity-80 mt-1"></i>
+                                <div>
+                                    <p class="text-xs md:text-sm opacity-80 mb-1">Office</p>
+                                    <p class="text-sm md:text-base font-bold">Room 305, Science Building</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-white/20">
+                            <p class="text-xs md:text-sm opacity-80 mb-2 md:mb-3">Office Hours</p>
+                            <div class="space-y-1 md:space-y-2">
+                                <div class="flex justify-between text-xs md:text-sm">
+                                    <span>Sun - Tue:</span>
+                                    <span class="font-bold">10 AM - 2 PM</span>
+                                </div>
+                                <div class="flex justify-between text-xs md:text-sm">
+                                    <span>Thursday:</span>
+                                    <span class="font-bold">2 PM - 5 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="bg-gray-900 text-gray-200">
+        <!-- Main Footer -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- About Section -->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">GHMMC</h3>
+                                <p class="text-xs text-gray-500">Est. 1874</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Empowering students with quality education and character development for over 150 years.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-facebook-f text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-twitter text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-youtube text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-linkedin-in text-base text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Home</span>
+                            </a></li>
+                            <li><a href="index.html#about" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">About Us</span>
+                            </a></li>
+                            <li><a href="#programs" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Programs</span>
+                            </a></li>
+                            <li><a href="index.html#admission" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Admission</span>
+                            </a></li>
+                            <li><a href="teachers.html" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Teachers</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Resources
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Library</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Student Portal</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Calendar</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Downloads</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Alumni Network</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Newsletter
+                        </h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Subscribe to get the latest news and updates from GHMMC.
+                        </p>
+                        <form class="space-y-3">
+                            <div class="relative">
+                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white px-4 py-3 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>Subscribe Now</span>
+                                <i class="fas fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-950 border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>&copy; 2025 Govt. Hazi Mohammad Mohsin College. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-primary transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
