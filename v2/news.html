@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - Govt. Hazi Mohammad Mohsin College</title>
+    <link rel="stylesheet" href="./assets/fonts/outfit-local.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/icons/all.min.css">
+</head>
+<body class="antialiased bg-gray-50 text-lg" style="font-family: 'Outfit', sans-serif; font-size: 18px;">
+
+    <!-- ========== HEADER SECTION ========== -->
+    <header class="header-transparent shadow-sm fixed w-full top-0 z-50">
+        <div class="bg-primary text-white text-sm py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex gap-4 md:gap-6">
+                    <span><i class="fas fa-phone mr-1"></i> <span class="hidden md:inline">+880 1234-567890</span></span>
+                    <span><i class="fas fa-envelope mr-1"></i> <span class="hidden md:inline">info@ghmmc.edu.bd</span></span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-gold"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gold"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Govt. Hazi Mohammad</h1>
+                        <p class="text-base text-gray-600">Mohsin College</p>
+                    </div>
+                </div>
+                <ul class="hidden lg:flex space-x-6 text-base font-medium items-center">
+                    <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            About <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#about" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">About Us</a>
+                            <a href="#history" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">History</a>
+                            <a href="#mission" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Mission & Vision</a>
+                            <a href="#infrastructure" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Infrastructure</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition flex items-center gap-1">
+                            Academics <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#programs" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Programs</a>
+                            <a href="#departments" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Departments</a>
+                            <a href="#curriculum" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Curriculum</a>
+                            <a href="#calendar" class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 hover:text-primary">Academic Calendar</a>
+                        </div>
+                    </li>
+                    <li><a href="#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                    <li><a href="#faculty" class="text-gray-700 hover:text-primary transition">Faculty</a></li>
+                    <li><a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                </ul>
+                <div class="hidden lg:flex items-center gap-3">
+                    <button class="group relative overflow-hidden bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold transition-all duration-300 flex items-center gap-2 h-10">
+                        <i class="fas fa-lock group-hover:scale-110 transition-transform duration-300"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg h-10">
+                        Apply Now
+                    </button>
+                </div>
+                <button class="lg:hidden text-primary text-3xl p-2" id="mobileMenuBtn">
+                    <i class="fa-solid fa-list-ul"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>About</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#about" class="text-gray-600 hover:text-primary transition text-sm block py-1">• About Us</a></li>
+                        <li><a href="#history" class="text-gray-600 hover:text-primary transition text-sm block py-1">• History</a></li>
+                        <li><a href="#mission" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Mission & Vision</a></li>
+                        <li><a href="#infrastructure" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Infrastructure</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="mobile-dropdown-btn text-gray-700 hover:text-primary transition flex items-center justify-between w-full">
+                        <span>Academics</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <ul class="mobile-dropdown-content hidden pl-6 mt-2 space-y-2 border-l-2 border-gray-200 ml-2">
+                        <li><a href="#programs" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Programs</a></li>
+                        <li><a href="#departments" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Departments</a></li>
+                        <li><a href="#curriculum" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Curriculum</a></li>
+                        <li><a href="#calendar" class="text-gray-600 hover:text-primary transition text-sm block py-1">• Academic Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission" class="text-gray-700 hover:text-primary transition">Admission</a></li>
+                <li><a href="#faculty" class="text-gray-700 hover:text-primary transition">Faculty</a></li>
+                <li><a href="#gallery" class="text-gray-700 hover:text-primary transition">Gallery</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+                <li><button class="bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white px-6 py-2 rounded text-sm font-semibold w-full transition-all duration-300 flex items-center justify-center gap-2 h-10"><i class="fas fa-lock"></i> Login</button></li>
+                <li><button class="bg-primary text-white px-6 py-2 rounded text-sm font-semibold w-full hover:bg-red-700 transition-all duration-300 shadow-md h-10">Apply Now</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-br from-primary to-red-700">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-white">
+                <div class="inline-block mb-4">
+                    <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold">
+                        <i class="fas fa-newspaper mr-2"></i>Campus Updates
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Latest News & Events</h1>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">Stay updated with the latest happenings, achievements, and announcements from GHMMC</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FILTER & SEARCH SECTION ========== -->
+    <section class="py-12 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
+                <div class="flex flex-col lg:flex-row gap-6 items-start lg:items-center justify-between">
+                    <!-- Filter Buttons -->
+                    <div class="flex-1">
+                        <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">Filter by Category</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <button class="news-filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-primary text-white shadow-md hover:shadow-lg transform hover:scale-105" data-category="all">
+                                <i class="fas fa-globe mr-2"></i>All News
+                            </button>
+                            <button class="news-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-gray-700 border-2 border-gray-200 hover:border-primary hover:text-primary hover:shadow-md transform hover:scale-105" data-category="academic">
+                                <i class="fas fa-book mr-2"></i>Academic
+                            </button>
+                            <button class="news-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-gray-700 border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 hover:shadow-md transform hover:scale-105" data-category="events">
+                                <i class="fas fa-calendar-alt mr-2"></i>Events
+                            </button>
+                            <button class="news-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-gray-700 border-2 border-gray-200 hover:border-gold hover:text-gold hover:shadow-md transform hover:scale-105" data-category="achievements">
+                                <i class="fas fa-trophy mr-2"></i>Achievements
+                            </button>
+                            <button class="news-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-gray-700 border-2 border-gray-200 hover:border-green-600 hover:text-green-600 hover:shadow-md transform hover:scale-105" data-category="announcements">
+                                <i class="fas fa-bullhorn mr-2"></i>Announcements
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Box -->
+                    <div class="w-full lg:w-96">
+                        <h3 class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-3">Search News</h3>
+                        <div class="relative">
+                            <input type="text" id="newsSearch" placeholder="Type to search articles..." class="w-full px-5 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all shadow-sm">
+                            <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED NEWS SECTION ========== -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Featured News</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Featured News 1 -->
+                <article class="news-card group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="academic">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800" alt="Science Fair 2025" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">Academic</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-calendar"></i>
+                                December 10, 2025
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-user"></i>
+                                Admin
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-eye"></i>
+                                1,245 views
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors">
+                            Annual Science Fair 2025 Showcases Student Innovation
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Our students presented groundbreaking projects in robotics, environmental science, and biotechnology. Over 150 projects were displayed, demonstrating exceptional creativity and scientific thinking.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Featured News 2 -->
+                <article class="news-card group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="achievements">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=800" alt="National Awards" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gold text-white px-3 py-1 rounded-full text-xs font-semibold">Achievements</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-calendar"></i>
+                                December 8, 2025
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-user"></i>
+                                Admin
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <i class="far fa-eye"></i>
+                                2,340 views
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors">
+                            GHMMC Students Win National Debate Championship
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Our debate team secured first place in the National Inter-College Debate Competition, competing against 50 institutions nationwide. This marks our third consecutive victory.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ALL NEWS SECTION ========== -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">All News & Updates</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="newsGrid">
+                <!-- News Card 1 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="events">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600" alt="Cultural Festival" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Events</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Dec 5, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>890 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Annual Cultural Festival Celebrates Diversity and Talent
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Three days of music, dance, drama, and art exhibitions showcasing the rich cultural heritage and creative talents of our students.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="academic">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600" alt="New Library" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">Academic</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Dec 3, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>1,120 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            State-of-the-Art Digital Library Now Open to Students
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            New facility features 50,000+ books, e-resources, research databases, and modern study spaces with high-speed internet access.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="announcements">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="Admission Notice" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Announcements</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Dec 1, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>3,450 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Admission Open for Academic Year 2026 - Apply Now
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Applications are now being accepted for HSC and Honors programs. Early bird scholarships available for meritorious students.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 4 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="achievements">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600" alt="Sports Victory" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-gold text-white px-3 py-1 rounded-full text-xs font-semibold">Achievements</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 28, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>1,890 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Cricket Team Wins Inter-College Championship Trophy
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Our cricket team defeated 15 colleges in the regional tournament, showcasing exceptional teamwork and sportsmanship.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 5 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="events">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600" alt="Workshop" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Events</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 25, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>670 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Career Development Workshop Series for Final Year Students
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Industry experts share insights on resume building, interview skills, and career planning for graduating students.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 6 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="academic">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600" alt="Research Publication" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">Academic</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 22, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>540 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Faculty Research Published in International Journal
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Dr. Ahmed's groundbreaking research on sustainable energy solutions featured in prestigious scientific publication.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 7 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="announcements">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" alt="Scholarship" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Announcements</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 20, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>2,340 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            New Scholarship Program Announced for Underprivileged Students
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            100 full scholarships covering tuition, books, and accommodation for academically excellent students from low-income families.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 8 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="achievements">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600" alt="Alumni Success" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-gold text-white px-3 py-1 rounded-full text-xs font-semibold">Achievements</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 18, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>1,560 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Alumni Appointed as UN Diplomat - A Proud Moment
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Former student Rashed Khan appointed as Bangladesh's representative to the United Nations, making history.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 9 -->
+                <article class="news-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer" data-category="events">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600" alt="Tree Plantation" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Events</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 15, 2025</span>
+                            <span><i class="far fa-eye mr-1"></i>780 views</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            Green Campus Initiative: 1000 Trees Planted in One Day
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-3 line-clamp-3">
+                            Students and faculty join hands for environmental conservation, planting trees across campus in a mega green drive.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:gap-3 transition-all">
+                            Read More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center gap-2 mt-12">
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="px-4 py-2 bg-primary text-white rounded-lg">1</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">2</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">3</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">4</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER SECTION ========== -->
+    <section class="py-16 bg-gradient-to-r from-primary to-red-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Stay Updated with Latest News</h2>
+                <p class="text-xl mb-8 text-white/90">Subscribe to our newsletter and never miss an update from GHMMC</p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center gap-2">
+                        Subscribe <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="bg-gray-900 text-gray-200">
+        <!-- Main Footer -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-12">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- About Section -->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white text-lg font-bold">GHMMC</h3>
+                                <p class="text-xs text-gray-500">Est. 1874</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Empowering students with quality education and character development for over 150 years.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-facebook-f text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-twitter text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-youtube text-base text-gray-300"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-all duration-300 border border-gray-700 hover:border-primary">
+                                <i class="fab fa-linkedin-in text-base text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Home</span>
+                            </a></li>
+                            <li><a href="#about" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">About Us</span>
+                            </a></li>
+                            <li><a href="#programs" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Programs</span>
+                            </a></li>
+                            <li><a href="#admission" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Admission</span>
+                            </a></li>
+                            <li><a href="#faculty" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Faculty</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Resources
+                        </h4>
+                        <ul class="space-y-2.5 text-sm">
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Library</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Student Portal</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Academic Calendar</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Downloads</span>
+                            </a></li>
+                            <li><a href="#" class="hover:text-primary transition-colors flex items-center gap-2 group">
+                                <i class="fas fa-chevron-right text-xs text-gray-400 group-hover:text-primary transition-colors"></i>
+                                <span class="text-gray-200">Alumni Network</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-white text-base font-semibold mb-4 flex items-center gap-2">
+                            <span class="w-1 h-5 bg-primary rounded"></span>
+                            Newsletter
+                        </h4>
+                        <p class="text-sm text-gray-300 mb-4">
+                            Subscribe to get the latest news and updates from GHMMC.
+                        </p>
+                        <form class="space-y-3">
+                            <div class="relative">
+                                <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors">
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white px-4 py-3 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>Subscribe Now</span>
+                                <i class="fas fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-gray-950 border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>&copy; 2025 Govt. Hazi Mohammad Mohsin College. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-primary transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/news.js"></script>
+
+</body>
+</html>
